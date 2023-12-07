@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
 
-function App() {
+import GlobalStyles from "./styles/global";
+import { AuthContext } from "./contexts/auth";
+import Login from "./components/Login";
+
+const App = () => {
+  const { user } = useContext(AuthContext);
+  if (!user) return <Login />;
+  console.log(user);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      opra kkk
+      <GlobalStyles />
+    </>
   );
-}
+};
 
 export default App;
