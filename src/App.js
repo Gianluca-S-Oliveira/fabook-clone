@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import Header from "./components/Header";
-import Body from "./components/Body";
+import Header from "./components/Header/index";
+import Body from "./components/Body/index";
 import GlobalStyles from "./styles/global";
 import { AuthContext } from "./contexts/auth";
 import Login from "./components/Login";
